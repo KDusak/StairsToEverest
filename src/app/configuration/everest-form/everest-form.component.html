@@ -1,0 +1,19 @@
+<form [formGroup]="createForm">
+  <label for="everestNameInput">What's the new Everest name</label>
+  <input id="everestNameInput" type="text" [formControlName]="'everestName'">
+  <button (click)="checkEverestName()">Check name</button>
+
+
+  <div *ngIf="showNextStep">
+    <app-geolocation-form [geolocationFormGroup]="createForm.controls['address']"></app-geolocation-form>
+  </div>
+
+  <div>
+    <button type="submit" (click)="submitForm()">Submit</button>
+  </div>
+
+</form>
+
+<div>
+  {{createForm.value | json}}
+</div>

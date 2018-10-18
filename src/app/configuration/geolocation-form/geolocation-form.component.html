@@ -1,0 +1,18 @@
+<form [formGroup]="geolocationFormGroup">
+  <label for="complexNameInput">Name of building or complex</label>
+  <input id="complexNameInput" type="text" [formControlName]="'complexName'">
+
+  <label for="streetInput">Street name ad number</label>
+  <input id="streetInput" type="text" [formControlName]="'street'">
+
+  <label for="cityInput">City</label>
+  <input id="cityInput" type="text" [formControlName]="'city'">
+
+  <label for="zipInput">Zip code</label>
+  <input id="zipInput" type="text" [formControlName]="'zip'">
+
+  <label for="countryInput">Country</label>
+  <input id="countryInput" type="text" [formControlName]="'countryCode'">
+
+  <button (click)="findBuildingOnMap()">Find on Map ... comming soon</button>
+</form>

@@ -1,0 +1,56 @@
+<h1>Everest Configurator</h1>
+
+
+!!! Novej plan. Bude To jeden velkej Form, kterej da dohromady celej model, ale bude rozdelen na komponenty :
+Everest
+  > Location
+  > Buildings[]
+     - buildingName
+    > Staircases[]
+       - name
+       - top level
+       - bottom level
+      >Floors[]
+         - floorNumber
+         - steps
+         - totalHeight
+
+<app-everest-form></app-everest-form>
+
+<!--Where is everest situated?-->
+<!--<form [formGroup]="everestLocationForm">-->
+  <!--<label for="complexNameInput">Name of building or complex</label>-->
+  <!--<input id="complexNameInput" type="text" [formControl]="complexName">-->
+
+  <!--<label for="streetInput">Street name ad number</label>-->
+  <!--<input id="streetInput" type="text" [formControl]="street">-->
+
+  <!--<label for="cityInput">City</label>-->
+  <!--<input id="cityInput" type="text" [formControl]="city">-->
+
+  <!--<label for="zipInput">Zip code</label>-->
+  <!--<input id="zipInput" type="text" [formControl]="zip">-->
+
+  <!--<label for="countryInput">Country</label>-->
+  <!--<input id="countryInput" type="text" [formControl]="countryCode">-->
+
+  <!--<button (click)="findBuildingOnMap()">Find on Map ... comming soon</button>-->
+<!--</form>-->
+
+
+<!--How many buildings are in Everest included?-->
+<!--<input type="countOfBuildings" (change)="setCountOfBuildings()">-->
+
+<!--Lets define these buildings ...-->
+<!--<form [formGroup]="everestBuildingsForm">-->
+    <!--<ul>-->
+      <!--<li *ngFor="let building of everestBuildingsForm.controls['buildings'].controls; let buildingIndex=index">-->
+        <!--<label for="buildingNameInput">Building name</label>-->
+        <!--<input id="buildingNameInput" type="text" [formControl]="buildingName">-->
+      <!--</li>-->
+    <!--</ul>-->
+
+<!--</form>-->
+
+
+

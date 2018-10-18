@@ -1,0 +1,23 @@
+<div>
+  <form [formGroup]="loginForm">
+    <label for="usernameInput">Username</label>
+    <input id="usernameInput" type="text" [formControlName]="'username'">
+
+    <label for="passwordInput">Password</label>
+    <input id="passwordInput" type="password" [formControlName]="'password'">
+
+    <div>{{serverResponse}}</div>
+
+    <button type="button" (click)="submitForm()">Login</button>
+  </form>
+
+  Need a <a routerLink="/sign-up">sign up</a>?
+
+  <div>
+    <h1>Rules</h1>
+    <p>
+      There are all rules of Everest. How to play it and what's the target
+    </p>
+  </div>
+
+</div>
